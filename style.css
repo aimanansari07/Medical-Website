@@ -1,0 +1,524 @@
+
+
+
+.img1 {
+    align-content: center;
+}
+
+/* jumbotron css */
+.jumbotron {
+    background: url(slider.JPG);
+    background-repeat: no-repeat;
+    height: max-content;
+
+}
+
+/* featurette css */
+
+.featurette {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.featurette:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+}
+
+.featurette-heading {
+    font-size: 48px;
+    color: #333;
+    line-height: 1.2;
+}
+
+.featurette-image {
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.div_2_info_heading_text {
+    color: #333;
+}
+
+.div_2_info_para_text {
+    color: #666;
+}
+
+.div_3_info_heading_text {
+    color: #333;
+}
+
+.div_3_info_para_text {
+    color: #666;
+}
+
+.legend {
+    color: #005a9c;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.legend:hover {
+    color: #ff6347;
+}
+
+/* form css */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.btn-primary {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0062cc;
+}
+
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeInUp {
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* cards */
+/* Add a transition effect to the card elements */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Change the transform and box-shadow of the card on hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a hover effect to the card title and text */
+.card:hover .card-title,
+.card:hover .card-text {
+    color: black;
+}
+
+/* Add a hover effect to the card button */
+.card:hover .btn {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+/* Add an animation to the card title and text on page load */
+.card-title,
+.card-text {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom CSS for card alignment */
+/* demo shizzle only */
+body {
+    background: #eee;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    /*   outline: 1px solid #ccc; */
+  }
+  
+  /* Still use global css (not utility css) for base typography etc? */
+  p {
+    margin-bottom: 0.8em;
+  }
+  
+
+
+  :root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--veryLightGray);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+h1:first-of-type {
+    font-weight: var(--weight1);
+    color: var(--varyDarkBlue);
+
+}
+
+h1:last-of-type {
+    color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.header {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.header p {
+    margin: 0 auto;
+    line-height: 2;
+    color: var(--grayishBlue);
+}
+
+
+.box p {
+    color: var(--grayishBlue);
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;  
+}
+
+img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+}
+.red {
+    border-top: 3px solid var(--red);
+}
+.blue {
+    border-top: 3px solid var(--blue);
+}
+.orange {
+    border-top: 3px solid var(--orange);
+}
+
+h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+    .box {
+        width: 20%;
+     
+    }
+    .header p {
+        width: 30%;
+    }
+    
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .stretch-card>.card {
+    width: 100%;
+    min-width: 100%
+}
+
+body {
+    background-color: #f9f9fa
+}
+
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem
+    }
+}
+
+.padding {
+    padding: 3rem
+}
+
+
+.owl-carousel .item{
+ margin: 3px;
+}
+.owl-carousel .item img{
+ display: block;
+ width: 100%;
+ height: auto;
+}
+
+.owl-carousel .item {
+   margin: 3px;
+}
+
+.owl-carousel{
+   margin-bottom:15px;
+}
+
+.demo{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    background-color: #57a2d7;
+    color: white;
+}
+
+.links{
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+   background-color: #91c3e7;
+}
+
+.links{
+    color: white;
+}
+
+ul {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "col1-item1 col2-item1 col3-item1"
+      "col1-item2 col2-item2 col3-item2"
+      "col1-item3 col2-item3 col3-item3"
+      "col1-item4 col2-item3 col3-item4"; 
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/* FAQ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(225, 225, 225);
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(160, 160, 160);
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.questions-container {
+    overflow: hidden;
+}
+
+.question-container {
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    margin: 5px;
+}
+
+.question {
+    background-color: rgb(245, 245, 245);
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer {
+    padding: 10px;
+    display: none;
+}
+
+.question p {
+    font-size: 20px;
+}
+
+.question-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.show-answer {
+    display: none;
+}
+
+.hide-answer {
+    display: inline-block;
+}
+
+.active .show-answer {
+    display: inline-block;
+}
+
+.active .hide-answer {
+    display: none;
+}
+
+.active .answer {
+    display: block;
+}
+
+/* Footer */
+
